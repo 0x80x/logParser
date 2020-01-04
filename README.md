@@ -1,15 +1,4 @@
-## logParser
-Утилита для поиска колючевых слов в стандартных логах
-
-
-path = os.path.split(sys.argv[0])[0]
-
-regexp_file = '\d*\D*.log'
-
-search_text = ['2019-12-05', 'error'] 
-
-except_pattern = ['DEBUG', 'INFO', 'WARNING', 'CRITITCAL'] 
-
+## Утилита для поиска колючевых слов в стандартных логах
 
 ## Использование
 Изменить в файле main.py нужные параметры (пример выше) и запутить main.py
@@ -23,3 +12,10 @@ except_pattern - type list. Эти паттерны нужны для опред
 
 Патерны под капотом формируются как и прописные так и заглавные, поэтому будут искать и те и те вхождения. 
 Скрипт работает на python3.6+
+
+
+
+path = os.path.split(sys.argv[0])[0]
+regexp_file = '\d*\D*.log'
+search_text = ['2019-12-05', 'error'] 
+except_pattern = ['DEBUG', 'INFO', 'WARNING', 'CRITITCAL'] 
