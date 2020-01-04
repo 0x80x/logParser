@@ -16,6 +16,9 @@ except_pattern - type list. Эти паттерны нужны для опред
 
 
 path = os.path.split(sys.argv[0])[0]
+
 regexp_file = '\d*\D*.log'
+
 search_text = ['2019-12-05', 'error'] 
+
 except_pattern = ['DEBUG', 'INFO', 'WARNING', 'CRITITCAL'] 
